@@ -1,0 +1,283 @@
+!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gói Giải Pháp Số Thông Minh - Viettel</title>
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Inter for modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb;
+        }
+        .viettel-red { background-color: #EE0033; }
+        .text-viettel-red { color: #EE0033; }
+        .hover-viettel-red:hover { background-color: #D6002D; }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold text-viettel-red">
+                VIETTEL <span class="text-gray-800">SOLUTIONS</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#tinh-nang" class="text-gray-600 hover:text-viettel-red transition duration-300">Tính năng</a>
+                <a href="#loi-ich" class="text-gray-600 hover:text-viettel-red transition duration-300">Lợi ích</a>
+                <a href="#gia" class="text-gray-600 hover:text-viettel-red transition duration-300">Bảng giá</a>
+                <button onclick="document.getElementById('order-form').scrollIntoView({ behavior: 'smooth' });" class="viettel-red text-white px-4 py-2 rounded-lg font-semibold hover-viettel-red transition duration-300 shadow-lg">
+                    Đăng ký ngay
+                </button>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-800 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="viettel-red text-white py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+                    Gói Giải Pháp <br class="hidden sm:inline">Số Thông Minh 
+                    <span class="text-yellow-300">2026</span>
+                </h1>
+                <p class="text-xl lg:text-2xl mb-8 font-light opacity-90">
+                    Nâng tầm quản trị doanh nghiệp và hành chính công lên nền tảng số hóa toàn diện với Viettel Cloud và AI.
+                </p>
+                <div class="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row">
+                    <button onclick="document.getElementById('gia').scrollIntoView({ behavior: 'smooth' });" class="bg-white text-viettel-red px-8 py-3 rounded-xl font-bold text-lg shadow-xl hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                        <i class="fas fa-arrow-alt-circle-right mr-2"></i> Khám phá ngay
+                    </button>
+                    <a href="tel:18008198" class="text-white border border-white px-8 py-3 rounded-xl font-bold text-lg hover:bg-white hover:text-viettel-red transition duration-300">
+                        Hỗ trợ 24/7: 1800 8198
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <!-- Placeholder for a powerful image or illustration -->
+                <div class="bg-red-700 w-full h-64 md:h-96 rounded-2xl flex items-center justify-center shadow-2xl">
+                    <i class="fas fa-cloud text-8xl text-red-300 opacity-50"></i>
+                    <p class="absolute text-2xl font-bold">Nền tảng số Viettel Cloud</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="tinh-nang" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center mb-12">
+                Các Tính Năng Chủ Lực
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Feature 1: Quản trị thông minh (IOC/Ecabinet) -->
+                <div class="p-6 bg-viettel-gray rounded-xl shadow-lg border-t-4 border-viettel-red transform hover:shadow-2xl transition duration-300">
+                    <i class="fas fa-tachometer-alt text-4xl text-viettel-red mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-3">Trung tâm Điều hành (IOC)</h3>
+                    <p class="text-gray-600">Tổng hợp dữ liệu theo thời gian thực (real-time) để ra quyết định nhanh chóng và chính xác cho Chính quyền và Doanh nghiệp.</p>
+                </div>
+
+                <!-- Feature 2: Bảo mật và An toàn thông tin (SOC) -->
+                <div class="p-6 bg-viettel-gray rounded-xl shadow-lg border-t-4 border-viettel-red transform hover:shadow-2xl transition duration-300">
+                    <i class="fas fa-shield-alt text-4xl text-viettel-red mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-3">An Ninh Mạng (SOC)</h3>
+                    <p class="text-gray-600">Giám sát và phản ứng sự cố 24/7. Bảo vệ dữ liệu tuyệt đối theo tiêu chuẩn quốc tế và Bộ Quốc phòng.</p>
+                </div>
+
+                <!-- Feature 3: Kết nối 5G và IoT -->
+                <div class="p-6 bg-viettel-gray rounded-xl shadow-lg border-t-4 border-viettel-red transform hover:shadow-2xl transition duration-300">
+                    <i class="fas fa-wifi text-4xl text-viettel-red mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-3">Hạ tầng 5G & IoT</h3>
+                    <p class="text-gray-600">Kết nối hàng triệu thiết bị thông minh (Camera AI, Sensor) với tốc độ cao, độ trễ cực thấp trên nền tảng 5G.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="loi-ich" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-800">
+                Lợi Ích Khi Sử Dụng Giải Pháp Viettel
+            </h2>
+            <div class="flex flex-wrap -m-4">
+                <!-- Benefit 1 -->
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-white p-8 flex-col shadow-md hover:shadow-xl transition duration-300">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full viettel-red text-white flex-shrink-0">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h2 class="text-xl font-bold text-gray-900">Tối ưu Chi phí</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="text-base text-gray-600">Giảm 40% chi phí vận hành và nhân sự nhờ tự động hóa quy trình và chuyển đổi sang mô hình thuê dịch vụ (OpEx).</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Benefit 2 -->
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-white p-8 flex-col shadow-md hover:shadow-xl transition duration-300">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full viettel-red text-white flex-shrink-0">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h2 class="text-xl font-bold text-gray-900">Tốc độ & Hiệu suất</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="text-base text-gray-600">Thời gian xử lý giao dịch giảm từ 48 giờ xuống còn 2 giờ. Tăng 20% hiệu suất làm việc của đội ngũ quản lý.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Benefit 3 -->
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-white p-8 flex-col shadow-md hover:shadow-xl transition duration-300">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full viettel-red text-white flex-shrink-0">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h2 class="text-xl font-bold text-gray-900">An toàn tuyệt đối</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="text-base text-gray-600">Đảm bảo tuân thủ nghiêm ngặt các quy định về an ninh mạng của Nhà nước và tiêu chuẩn bảo mật quốc tế.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="gia" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center mb-12">
+                Bảng Giá Giải Pháp Toàn Diện
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Basic Plan -->
+                <div class="bg-gray-50 border border-gray-200 rounded-2xl p-8 flex flex-col shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Gói Cơ Bản (Essential)</h3>
+                    <p class="text-lg text-gray-600 mb-6">Phù hợp cho khối Cơ quan, Doanh nghiệp quy mô nhỏ.</p>
+                    <div class="text-4xl font-extrabold text-viettel-red mb-6">
+                        Liên hệ
+                        <span class="text-xl font-medium text-gray-600 ml-2">/tháng</span>
+                    </div>
+                    <ul class="space-y-3 flex-grow">
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check-circle text-green-500 mr-3"></i> Hạ tầng Cloud: 100GB</li>
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check-circle text-green-500 mr-3"></i> Giải pháp văn phòng số</li>
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check-circle text-green-500 mr-3"></i> Hỗ trợ kỹ thuật 8/5</li>
+                        <li class="flex items-center text-gray-500 line-through"><i class="fas fa-times-circle text-red-500 mr-3"></i> Tích hợp AI nâng cao</li>
+                    </ul>
+                    <button class="mt-8 viettel-red text-white px-6 py-3 rounded-xl font-semibold hover-viettel-red transition duration-300 shadow-lg" onclick="document.getElementById('order-form').scrollIntoView({ behavior: 'smooth' });">
+                        Chọn gói này
+                    </button>
+                </div>
+
+                <!-- Premium Plan (Recommended) -->
+                <div class="viettel-red text-white rounded-2xl p-8 flex flex-col shadow-2xl transform scale-105">
+                    <span class="text-sm font-bold uppercase mb-2 bg-white text-viettel-red px-3 py-1 rounded-full self-start">Khuyên dùng</span>
+                    <h3 class="text-3xl font-bold mb-4">Gói Toàn Diện (Premium)</h3>
+                    <p class="text-lg mb-6 opacity-90">Phù hợp cho Khối Chính quyền, Y tế, Giáo dục.</p>
+                    <div class="text-4xl font-extrabold mb-6 text-yellow-300">
+                        Thỏa thuận
+                        <span class="text-xl font-medium text-white ml-2">/dự án</span>
+                    </div>
+                    <ul class="space-y-3 flex-grow">
+                        <li class="flex items-center font-medium"><i class="fas fa-check-circle text-yellow-300 mr-3"></i> <strong>Hạ tầng Cloud: Không giới hạn</strong></li>
+                        <li class="flex items-center font-medium"><i class="fas fa-check-circle text-yellow-300 mr-3"></i> Giải pháp Điều hành IOC/SOC</li>
+                        <li class="flex items-center font-medium"><i class="fas fa-check-circle text-yellow-300 mr-3"></i> Tích hợp AI/Big Data</li>
+                        <li class="flex items-center font-medium"><i class="fas fa-check-circle text-yellow-300 mr-3"></i> Hỗ trợ kỹ thuật 24/7 (SLA cam kết)</li>
+                    </ul>
+                    <button class="mt-8 bg-white text-viettel-red px-6 py-3 rounded-xl font-bold hover:bg-gray-100 transition duration-300 shadow-xl" onclick="document.getElementById('order-form').scrollIntoView({ behavior: 'smooth' });">
+                        Yêu cầu Báo giá
+                    </button>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="bg-gray-50 border border-gray-200 rounded-2xl p-8 flex flex-col shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Gói Đặc thù (Enterprise)</h3>
+                    <p class="text-lg text-gray-600 mb-6">Dành cho các Tập đoàn, Dự án Quốc phòng An ninh.</p>
+                    <div class="text-4xl font-extrabold text-viettel-red mb-6">
+                        Tùy chỉnh
+                        <span class="text-xl font-medium text-gray-600 ml-2">/Hệ thống</span>
+                    </div>
+                    <ul class="space-y-3 flex-grow">
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check-circle text-green-500 mr-3"></i> Thiết kế kiến trúc riêng</li>
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check-circle text-green-500 mr-3"></i> Đội ngũ kỹ sư chuyên trách</li>
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check-circle text-green-500 mr-3"></i> Cam kết bảo mật tuyệt đối</li>
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check-circle text-green-500 mr-3"></i> Thỏa thuận dịch vụ cấp cao</li>
+                    </ul>
+                    <button class="mt-8 viettel-red text-white px-6 py-3 rounded-xl font-semibold hover-viettel-red transition duration-300 shadow-lg" onclick="document.getElementById('order-form').scrollIntoView({ behavior: 'smooth' });">
+                        Liên hệ tư vấn
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Order Form -->
+    <section id="order-form" class="py-16 viettel-red text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white text-gray-800 rounded-3xl p-10 md:p-16 shadow-2xl">
+            <h2 class="text-3xl font-extrabold text-center mb-6">
+                Bạn đã sẵn sàng Chuyển đổi số?
+            </h2>
+            <p class="text-xl text-center mb-10 text-gray-600">
+                Hãy để lại thông tin, chuyên gia của chúng tôi sẽ liên hệ tư vấn trong 2 giờ làm việc.
+            </p>
+
+            <form action="#" method="POST" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-lg font-medium text-gray-700">Tên Doanh nghiệp/Cơ quan</label>
+                    <input type="text" name="name" id="name" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-viettel-red focus:border-viettel-red placeholder-gray-400">
+                </div>
+                <div>
+                    <label for="contact-name" class="block text-lg font-medium text-gray-700">Người đại diện liên hệ</label>
+                    <input type="text" name="contact-name" id="contact-name" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-viettel-red focus:border-viettel-red placeholder-gray-400">
+                </div>
+                <div>
+                    <label for="phone" class="block text-lg font-medium text-gray-700">Số điện thoại</label>
+                    <input type="tel" name="phone" id="phone" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-viettel-red focus:border-viettel-red placeholder-gray-400">
+                </div>
+                <div>
+                    <label for="package" class="block text-lg font-medium text-gray-700">Gói giải pháp quan tâm</label>
+                    <select id="package" name="package" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-viettel-red focus:border-viettel-red">
+                        <option>Gói Cơ Bản (Essential)</option>
+                        <option selected>Gói Toàn Diện (Premium) - Khuyên dùng</option>
+                        <option>Gói Đặc thù (Enterprise)</option>
+                        <option>Tư vấn giải pháp ITS/Y tế/Giáo dục</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full viettel-red text-white px-6 py-3 rounded-xl font-bold text-lg hover-viettel-red transition duration-300 shadow-xl transform hover:scale-[1.01]">
+                    <i class="fas fa-paper-plane mr-2"></i> Gửi yêu cầu tư vấn
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-xl font-bold mb-3">VIETTEL HÀ NỘI - KHỐI KDGP</p>
+            <p class="text-sm text-gray-400">Địa chỉ: Tòa nhà Viettel, Số 1 Giang Văn Minh, Ba Đình, Hà Nội</p>
+            <p class="text-sm text-gray-400">Email: kdgp.hanoi@viettel.com.vn | Hotline: 1800 8198</p>
+            <div class="mt-6 border-t border-gray-700 pt-4">
+                <p class="text-xs text-gray-500">&copy; 2026 Viettel Hà Nội. Mọi quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
